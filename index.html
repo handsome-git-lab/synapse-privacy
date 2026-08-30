@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Synapse — Privacy Policy</title>
+<meta name="description" content="Privacy policy for Synapse: Connection Signals. Photographs, video and conversations are analysed on your device and are not uploaded.">
+<meta name="robots" content="index, follow">
+<style>
+:root{--bg:#fbfbfa;--fg:#1c1c1a;--muted:#5c5c56;--rule:#e3e2dd;--accent:#0b6b7d;
+--code-bg:#f0efeb;--card:#ffffff}
+@media (prefers-color-scheme:dark){:root{--bg:#101314;--fg:#e6e6e2;--muted:#a0a099;
+--rule:#282c2e;--accent:#5ad6e8;--code-bg:#1a1e20;--card:#161a1b}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);
+font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+-webkit-text-size-adjust:100%}
+main{max-width:44rem;margin:0 auto;padding:3rem 1.25rem 5rem}
+h1{font-size:1.9rem;line-height:1.25;margin:0 0 1.5rem;letter-spacing:-.02em}
+h2{font-size:1.25rem;margin:2.75rem 0 .75rem;letter-spacing:-.01em}
+h3{font-size:1.05rem;margin:2rem 0 .5rem}
+p{margin:0 0 1rem}
+a{color:var(--accent)}
+hr{border:0;border-top:1px solid var(--rule);margin:2.5rem 0}
+ul,ol{margin:0 0 1rem;padding-left:1.35rem}
+li{margin:.3rem 0}
+code{background:var(--code-bg);padding:.1em .35em;border-radius:4px;
+font:.87em/1.4 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+.scroll{overflow-x:auto;margin:0 0 1.25rem;border:1px solid var(--rule);border-radius:8px;
+background:var(--card)}
+table{border-collapse:collapse;width:100%;font-size:.92rem}
+th,td{text-align:left;vertical-align:top;padding:.6rem .75rem;
+border-bottom:1px solid var(--rule)}
+th{font-weight:600}
+tbody tr:last-child td{border-bottom:0}
+footer{margin-top:3rem;padding-top:1.25rem;border-top:1px solid var(--rule);
+color:var(--muted);font-size:.87rem}
+</style>
+</head>
+<body>
+<main>
+<h1>Synapse — Privacy Policy</h1>
+<p><strong>Effective date:</strong> 30 August 2026</p>
+<p><strong>Contact:</strong> handsomegit3@gmail.com</p>
+<hr>
+<h2>The short version</h2>
+<p>Synapse photographs or films two people and scores their interaction. All of that content analysis happens on your phone. No photograph, video, pasted conversation, screenshot text or result is uploaded. The app has no account or login and Synapse does not operate its own analytics service.</p>
+<p>The app can use the network in three narrower ways: downloading the optional AI model if you enable it; asking Google Play for a purchase price and ownership state when you open scan-purchase controls; and diagnostic/utilisation metrics sent to Google by the bundled ML Kit text-recognition SDK. None includes a photograph, video, conversation, screenshot text, result or facial measurement. All three are described below, because "we never use the internet" would be untrue.</p>
+<hr>
+<h2>What the app can access</h2>
+<p><strong>Your camera.</strong> Used to take the photograph or video clip you ask it to take. The app requests camera access only when you start a scan, and the camera is not used at any other time.</p>
+<p><strong>Photos you choose.</strong> You may pick an existing photo instead of taking one, or select a chat screenshot for Conversation Signals. The app receives only the item you select.</p>
+<p><strong>Text you paste.</strong> The Conversation Signals screen reads a conversation you paste into it. This is described separately below because it is handled differently from everything else.</p>
+<p>Synapse does not request or access your contacts, location, microphone, call logs, messages, accounts, installed-app list or advertising identifier.</p>
+<hr>
+<h2>What happens to your photographs and video</h2>
+<p>They are analysed on your device, by software bundled inside the app. Face and body measurements are computed locally and turned into the scores you see.</p>
+<p><strong>Your photographs and video clips are not uploaded.</strong> The full-size image or clip is used for the reading and then discarded — it is never written to storage.</p>
+<p><strong>Two exceptions, and they are worth stating plainly.</strong></p>
+<p><em>Replay frames.</em> When you record a clip, the app keeps small, heavily downscaled still frames (480 pixels wide) in its temporary cache, so that the results screen can replay the moments it measured and show you what it saw. These are kept only for clips, which are the only thing there is to replay.</p>
+<p><em>A frame for the optional written insight.</em> If you have turned on the optional AI report, the app also keeps one bounded image (at most 960 pixels, one picture) so the on-device model can be shown what was measured. This one <strong>is</strong> kept for still photographs as well as clips. It is only kept when both people were fully measured in it — a frame where somebody was missed is never retained and never shown to the model — and for a clip it may be a small contact sheet of up to three such frames.</p>
+<p>Both kinds of frame:</p>
+<ul><li>live in the app's private cache, which no other app can read</li><li>are deleted when you start another capture, when you press <strong>Record again</strong>, and when the app is next opened</li><li>are deleted if you clear the app's cache in Android Settings, or uninstall</li><li>are never uploaded, and are never attached to a saved result.</li></ul>
+<p><em>Verified, not asserted:</em> <code>DetectionIsOfflineTest</code> runs the real detection pipeline over six photographs on a physical device and asserts that the app's process transferred zero bytes in either direction while doing it. It is a standing test, kept so that a future dependency which starts transmitting fails the build rather than shipping quietly.</p>
+<hr>
+<h2>What the app stores on your device</h2>
+<p>Nothing listed here leaves your phone, and all of it is inside the app's own private storage, which other apps cannot read.</p>
+<div class="scroll"><table><thead><tr><th>What</th><th>When</th><th>How to remove it</th></tr></thead><tbody><tr><td>Result history: the two names you entered, the date, the scores, and the dominant expression detected for each person</td><td>Only if <strong>Keep a history</strong> is on in Settings</td><td>Turn the setting off, delete entries, or uninstall</td></tr><tr><td>Cropped thumbnails of the two faces</td><td>Only if <strong>Include photos</strong> is <em>also</em> on. Off unless you turn it on</td><td>As above</td></tr><tr><td>Your settings: history on/off, thumbnails on/off, AI report on/off, appearance, and whether you have seen the privacy notice</td><td>Always</td><td>Uninstall</td></tr><tr><td>ML Kit SDK state, including a per-installation diagnostic identifier not intended to identify a person or physical device</td><td>Managed by Google's bundled text-recognition SDK</td><td>Uninstall</td></tr><tr><td>The optional AI model file, about 2.5 GB</td><td>Only if you choose to download it</td><td>Turn the feature off and delete the model, or uninstall</td></tr></tbody></table></div>
+<p>Uninstalling the app deletes all of it.</p>
+<p><strong>Backups are switched off.</strong> The app sets <code>allowBackup="false"</code>, so none of the above is copied to Google Drive, to a cloud backup, or to a new phone during device transfer. This is a deliberate choice: it means your history exists in exactly one place, and it means restoring a phone does not silently resurrect it.</p>
+<hr>
+<h2>The conversation paste</h2>
+<p>Text you paste into Conversation Signals is held <strong>in memory, on that screen, and nowhere else</strong>. You may also select a chat screenshot. A bundled on-device text recogniser extracts editable text and uses bubble position and colour as speaker-assignment hints; the screenshot and extracted text are not saved by Synapse. They are not written to the database, not included in history, and not uploaded. Leaving the screen or rotating the phone discards the text.</p>
+<p>If you have enabled the optional AI report, the pasted text is read by a language model <strong>running on your phone</strong>, inside the app's own process. It is not sent to any server, and no server is involved in producing the report. The same is true of the image described above: the model can see a frame from your own capture, and that frame goes no further than your phone.</p>
+<p><em>Verified, not asserted:</em> <code>ConversationIsOfflineTest</code> generates a real report from a real paste using the on-device model, and asserts the app transferred zero bytes while doing so. This is the claim in this document most likely to be disbelieved — for almost every other app, an "AI report" means a server — which is why it is measured rather than promised.</p>
+<hr>
+<h2>Network access</h2>
+<p>If you turn on the optional AI report, the app downloads a language model. Two network operations are involved in that download:</p>
+<ol><li><strong>Google Play</strong> delivers an additional part of the app. This is standard Play app delivery and is subject to Google's own privacy policy.</li><li><strong>The model file is downloaded from Hugging Face</strong>, at <code>https://huggingface.co/litert-community/gemma-4-E2B-it-litert-lm</code>.</li></ol>
+<p>Like any download, these requests reveal your device's IP address and the fact that a file was requested to the servers involved. <strong>Nothing about you, your photographs, your conversation or your results is included in either request.</strong> The download is a plain file fetch and carries no identifier the app created.</p>
+<p>The file's SHA-256 checksum is verified after download, and a file that does not match is discarded.</p>
+<p>When you open the unlimited-scan controls in Settings or after using the free allowance, Google Play Billing requests the current localised price and checks whether the Play account signed in on that device owns the one-time purchase. If you choose to buy it, the purchase is processed by Google Play under Google's terms. Synapse stores only a local yes/no entitlement and lifetime completed-scan count. It does not receive or store payment-card details, and no analysed content is included in a billing request. Billing is not started during a scan, conversation analysis, screenshot recognition or written-insight generation.</p>
+<p>The bundled Google ML Kit text recogniser used for chat screenshots may also contact Google for bug fixes, model or hardware-compatibility information and sends SDK diagnostic/utilisation metrics. Google's current disclosure lists device and app information, a per-installation identifier not intended to identify a person or physical device, performance, API configuration, input and output sizes, feature version, event types and error codes. Google states that this metadata is encrypted in transit and is not transferred to third parties. It does <strong>not</strong> include the screenshot, recognised conversation text or OCR output. Synapse does not receive or use these metrics.</p>
+<p>These statements should be rechecked at release time against Google's <a href="https://developers.google.com/ml-kit/terms">ML Kit Terms &amp; Privacy</a> and <a href="https://developers.google.com/ml-kit/android-data-disclosure">Android data-disclosure guidance</a>, because SDK collection behaviour can change independently of this app.</p>
+<p>This means disabling the optional AI report prevents the large model download, but does not support a claim that the installed app can never contact the network.</p>
+<hr>
+<h2>Sharing a result</h2>
+<p>The <strong>Create &amp; share card</strong> button, and the share action beside a saved History result, create an image, save it to your device's gallery in a <code>Pictures/Synapse</code> folder, and open Android's system share sheet. The current-result image contains the two names, the 0–100 Synergy Index, which inputs contributed, and — for a visual result — its evidence quality and signal coverage. An archetype metaphor is included only for an eligible current result; it is withheld for body-only readings and when the questionnaire found a stated conflict. A card created from History is more limited because old rows do not retain all of that provenance: it omits evidence quality, coverage and the archetype. Share images do not contain either person's photograph or an inferred emotion label. They are created only when you press a share action.</p>
+<p>Once the image is in your gallery it is an ordinary photo under your control, and anything you subsequently do with it — sending it to someone, posting it — is outside this app and outside this policy.</p>
+<hr>
+<h2>What the app does not do</h2>
+<ul><li>No Synapse account, login or email address collected; purchases use the Play account already signed in on the device</li><li>No crash reporting</li><li>No advertising, no ad network, no advertising identifier</li><li>No Synapse-operated analytics or sale of personal data</li></ul>
+<p>There is no advertising SDK. The ML Kit dependency has the limited Google diagnostic collection described above; it must also be reflected in the Google Play Data Safety form.</p>
+<hr>
+<h2>Sensitive information</h2>
+<p>Facial measurements are personal and sensitive information. Synapse computes them on your device to produce a score, and:</p>
+<ul><li>does not upload them</li><li>does not use them to identify anyone, and has no ability to — it does not build, store or compare face templates, and cannot recognise the same person across two readings</li><li>stores face thumbnails only if you explicitly turn on <strong>both</strong> history and photo storage, and only inside the app's private storage.</li></ul>
+<hr>
+<h2>What the results are, and are not</h2>
+<p>Synapse is entertainment. Its scores describe visible things — expressions, orientation, spacing, wording — and cannot determine anyone's feelings, intentions, honesty or the future of a relationship. The app is written to say what was observed rather than what it means, and no result should be treated as a finding about a person.</p>
+<hr>
+<h2>Children</h2>
+<p>Synapse is not directed at children and is intended for adults. Synapse does not ask for a birth date or know a user's age. The limited ML Kit diagnostic data described above may be processed whenever that SDK is used.</p>
+<p>Please do not photograph a child with this app.</p>
+<hr>
+<h2>Your choices</h2>
+<ul><li><strong>Turn history off.</strong> Nothing is written down.</li><li><strong>Turn photo storage off.</strong> No face images are kept.</li><li><strong>Never enable the AI report.</strong> This prevents the 2.5 GB model download.</li><li><strong>Delete individual results</strong>, or clear them.</li><li><strong>Uninstall.</strong> Everything the app stored goes with it, and there is no copy anywhere else to ask about.</li></ul>
+<p>Because Synapse holds no account or user-content copy outside your own device, there is no Synapse account to close and no conversation, photograph or result for us to look up. Uninstalling removes the app's local content. Google's handling of ML Kit diagnostic metadata is governed by Google's privacy policy.</p>
+<hr>
+<h2>Changes</h2>
+<p>If this policy changes, the effective date above changes with it. Every earlier version of this page remains publicly readable in the revision history of the repository that hosts it, so a change can be seen rather than taken on trust.</p>
+<h2>Contact</h2>
+<p><strong>handsomegit3@gmail.com</strong> — <strong>Handsome Git Lab</strong></p>
+<footer>Handsome Git Lab · Synapse: Connection Signals</footer>
+</main>
+</body>
+</html>
