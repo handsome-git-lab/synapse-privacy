@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self'; style-src 'self'; script-src 'self'; connect-src 'none'; base-uri 'none'; form-action 'none'">
+  <meta name="description" content="A private invitation from Synapse. Answer on your own phone and explore your shared preferences together.">
+  <meta property="og:title" content="Explore together with Synapse">
+  <meta property="og:description" content="12 light questions. Private answers. A little more to talk about.">
+  <meta property="og:type" content="website">
+  <title>Your Synapse invitation</title>
+  <link rel="stylesheet" href="invite.css">
+  <script src="invite.js" defer></script>
+</head>
+<body>
+<main>
+  <header><img src="synapse-icon.svg" width="88" height="88" alt="Synapse app icon"><span>SYNAPSE</span></header>
+  <p class="eyebrow">A LITTLE MORE TO TALK ABOUT</p>
+  <h1 id="title">Let's explore this together.</h1>
+  <p id="intro">12 light questions. Answer privately on your phone, then send your protected reply back to explore your shared preferences.</p>
+  <p id="status" role="status">Checking your invitation…</p>
+  <section id="actions" hidden>
+    <a id="open" class="button">Open in Synapse</a>
+    <p class="small">The app will let you review this before accepting it. Use invitations only from someone you recognise.</p>
+    <details>
+      <summary>Using Synapse Dev?</summary>
+      <p class="small">For testers with the separate development app installed.</p>
+      <a id="open-dev" class="button secondary">Open in Synapse Dev</a>
+    </details>
+    <details>
+      <summary>Having trouble opening the app?</summary>
+      <p>Copy the invitation, then open Synapse → Invitations → Import. You can also save its protected file and import that.</p>
+      <button id="copy" class="button secondary" type="button">Copy invitation</button>
+      <a id="download" class="text-link" download="synapse-invitation.synapse">Save protected file</a>
+      <textarea id="manual" readonly hidden aria-label="Invitation code to copy"></textarea>
+    </details>
+  </section>
+  <section class="note">
+    <h2>Don't have Synapse yet?</h2>
+    <p>Invitations currently require the invitation-enabled Android beta. Ask the person who invited you for beta access, then return to this message after installing. There is no account to create.</p>
+  </section>
+  <footer>
+    <p>Your questionnaire is completed in the app, on your phone. This page does not collect your answers or use analytics. The link carries its invitation or encrypted reply after the # symbol; that part is not sent to this website's server. Your messaging app still receives the link you share.</p>
+    <p>Synapse shows broad preference patterns, not a prediction of feelings.</p>
+    <a href="./" rel="noreferrer">Synapse privacy policy</a>
+  </footer>
+  <noscript>This page needs JavaScript to open the invitation locally. You can instead copy the complete link into Synapse → Invitations → Import.</noscript>
+</main>
+</body>
+</html>
