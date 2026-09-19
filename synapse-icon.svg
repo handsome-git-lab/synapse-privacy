@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 108 108"><rect width="108" height="108" rx="24" fill="#080D14"/>
+<defs><linearGradient id="g0" gradientUnits="userSpaceOnUse" x1="24" y1="0" x2="84" y2="0">
+<stop offset="0" stop-color="#5AD6E8"/>
+<stop offset="0.44" stop-color="#A9EAF3"/>
+<stop offset="0.56" stop-color="#F7D3A0"/>
+<stop offset="1" stop-color="#EFA13C"/>
+</linearGradient></defs>
+<path fill="none" d="M31.64,42.82 C31.64,36.65 36.65,31.64 42.82,31.64 C48.99,31.64 54.00,36.65 54.00,42.82 C54.00,36.65 59.01,31.64 65.18,31.64 C71.35,31.64 76.36,36.65 76.36,42.82 C76.36,59.16 56.58,71.20 54.00,78.08 C51.42,71.20 31.64,59.16 31.64,42.82 Z" stroke="url(#g0)" stroke-width="1.9" opacity="0.22" stroke-linecap="round" stroke-linejoin="round"/>
+<defs><linearGradient id="g1" gradientUnits="userSpaceOnUse" x1="24" y1="0" x2="84" y2="0">
+<stop offset="0" stop-color="#5AD6E8"/>
+<stop offset="0.44" stop-color="#A9EAF3"/>
+<stop offset="0.56" stop-color="#F7D3A0"/>
+<stop offset="1" stop-color="#EFA13C"/>
+</linearGradient></defs>
+<path fill="none" d="M34.16,41.82 L34.16,46.99 M37.41,39.59 L37.41,51.93 M40.66,42.40 L40.66,52.09 M43.91,40.83 L43.91,57.11 M47.16,43.88 L47.16,58.26 M50.41,43.86 L50.41,63.80 M53.66,52.17 L53.66,65.25 M56.91,45.61 L56.91,63.48 M60.16,43.95 L60.16,59.19 M63.41,40.08 L63.41,58.65 M66.66,42.55 L66.66,52.60 M69.91,40.18 L69.91,51.92 M73.16,41.75 L73.16,47.62" stroke="url(#g1)" stroke-width="1.90" opacity="0.72" stroke-linecap="round" stroke-linejoin="round"/>
+<defs><linearGradient id="g2" gradientUnits="userSpaceOnUse" x1="24" y1="0" x2="84" y2="0">
+<stop offset="0" stop-color="#5AD6E8"/>
+<stop offset="0.44" stop-color="#A9EAF3"/>
+<stop offset="0.56" stop-color="#F7D3A0"/>
+<stop offset="1" stop-color="#EFA13C"/>
+</linearGradient></defs>
+<path fill="none" d="M23.50,42.82 L30.24,42.82 L32.54,40.02 L35.79,53.21 L39.04,33.90 L42.29,61.85 L45.54,36.52 L48.79,69.71 L52.04,39.86 L55.29,74.21 L58.54,38.05 L61.79,66.38 L65.04,33.24 L68.29,58.19 L71.54,35.22 L74.79,48.90 L77.76,42.82 L84.50,42.82" stroke="url(#g2)" stroke-width="2.80" opacity="1" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
