@@ -1,0 +1,22 @@
+:root { color-scheme:dark; font-family:system-ui,-apple-system,sans-serif; color:#edf6f8; background:#0d1625 }
+* { box-sizing:border-box }
+body { margin:0; background:radial-gradient(ellipse at top right,#193e45,transparent 65%); min-height:100vh }
+main { max-width:600px; padding:40px 24px 48px; margin:auto }
+header { display:flex; align-items:center; gap:20px; font-weight:700; font-size:23px; letter-spacing:3px }
+header img { border-radius:22px }
+.eyebrow { margin-top:40px; font-size:12px; letter-spacing:2px; color:#75ded2 }
+h1 { font-size:clamp(36px,8vw,52px); line-height:1.08; letter-spacing:-1.4px; margin:18px 0 24px }
+p { line-height:1.65; color:#bfd0da }
+#status { color:#80e0d3 }
+.button { display:block; width:100%; text-align:center; border:0; border-radius:14px; background:#79e2d2; color:#0b262c; padding:18px; margin:20px 0 12px; font:600 17px system-ui; text-decoration:none; cursor:pointer }
+.secondary { background:#213641; color:#e5f6f6; border:1px solid #43616d }
+a { color:#88e6dc; overflow-wrap:anywhere }
+.text-link { display:block; padding:14px 0 }
+.small,footer { font-size:13px }
+details { margin:22px 0; padding-top:20px; border-top:1px solid #334752 }
+summary { cursor:pointer; padding:8px 0; font-weight:600 }
+.note { margin:32px 0; border-radius:18px; padding:4px 20px; background:#182b36 }
+h2 { font-size:19px; margin-top:22px }
+textarea { width:100%; min-height:140px; font:14px monospace; color:#edf6f8; background:#13232d; padding:12px }
+:focus-visible { outline:3px solid #ffc58a; outline-offset:4px }
+[hidden] { display:none!important }
